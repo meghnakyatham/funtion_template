@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+template<class T>  //This a function template that reduces the size that is used by two different functions for two different data types
+T maxim(T a, T b){
+      return a>b?a:b;
+}
+//int maxim(int a, int b){  //Instead of these two functions we can just write a template 
+//    return a>b?a:b;
+//}
+//float maxim(float a, float b){
+//    return a>b?a:b;
+//}
+int main(){
+    cout<<maxim(12,14)<<endl;
+    cout<<maxim(13.6,75.9)<<endl;
+    cout<<maxim(2.3f,5.6f)<<endl;
+    return 0;
+}
